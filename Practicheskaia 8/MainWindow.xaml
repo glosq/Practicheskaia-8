@@ -1,0 +1,35 @@
+﻿<Window x:Class="Practicheskaia_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practicheskaia_8"
+        mc:Ignorable="d"
+        Title="Практическая работа" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="10">
+            <Label Content="Периметр круга"/>
+            <TextBox x:Name="tbPerimetrKryga"/>
+            <Label Content="Площадь круга"/>
+            <TextBox x:Name="tbPloshadKryga"/>
+            <Label Content="Периметр Прямоугольника"/>
+            <TextBox x:Name="tbPerimetrPramoygolnika"/>
+            <Label Content="Площадь Прямоуголика"/>
+            <TextBox x:Name="tbPloshadPramoygolnika"/>
+            <Button Content="Сравнить площади этих фигур" Width="200" Margin="5" Click="Button_Click"/>
+            <Label Content="Результат"/>
+            <TextBox x:Name="tbResult" Height="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <Button Content="Информация" Margin="5" Click="Button_Click_2"/>
+            <Button Content="Выход" Margin="5" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>
